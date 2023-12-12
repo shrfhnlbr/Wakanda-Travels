@@ -1,0 +1,4 @@
+Backend/.flaskenv
+Backend/.env
+Backend/client_secret.json
+.DS_Store
