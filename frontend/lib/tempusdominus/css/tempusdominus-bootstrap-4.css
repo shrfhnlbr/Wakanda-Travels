@@ -1,0 +1,84 @@
+/*@preserve
+ * Tempus Dominus Bootstrap4 v5.1.2 (https://tempusdominus.github.io/bootstrap-4/)
+ * Copyright 2016-2018 Jonathan Peterson
+ * Licensed under MIT (https://github.com/tempusdominus/bootstrap-3/blob/master/LICENSE)
+ */
+
+/* Hidden elements */
+.sr-only,
+.bootstrap-datetimepicker-widget .btn[data-action^="increment"],
+.bootstrap-datetimepicker-widget .btn[data-action^="decrement"],
+.bootstrap-datetimepicker-widget .btn[data-action^="show"],
+.bootstrap-datetimepicker-widget .btn[data-action="togglePeriod"],
+.bootstrap-datetimepicker-widget .btn[data-action="clear"],
+.bootstrap-datetimepicker-widget .btn[data-action="today"],
+.bootstrap-datetimepicker-widget .picker-switch::after,
+.bootstrap-datetimepicker-widget table th.prev::after,
+.bootstrap-datetimepicker-widget table th.next::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Widget styling */
+.bootstrap-datetimepicker-widget {
+  list-style: none;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  display: block;
+  margin: 2px 0;
+  padding: 4px;
+  width: 14rem;
+}
+
+@media (min-width: 576px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
+  }
+}
+
+/* Media queries for different screen sizes */
+@media (min-width: 768px),
+(min-width: 992px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
+  }
+
+/* Dropdown menu appearance */
+.bootstrap-datetimepicker-widget.dropdown-menu:before,
+.bootstrap-datetimepicker-widget.dropdown-menu:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  top: -7px;
+  left: 7px;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid white;
+  top: -6px;
+  left: 8px;
+}
+
+/* ... (continue with the rest of the styles) */
+
+/* Input group styling */
+.input-group [data-toggle="datetimepicker"] {
+  cursor: pointer;
+}
+
